@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veny.p | Full-Stack Developer</title>
+    <!-- Use Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8FAFC;
+            color: #1E293B;
+        }
+        .container {
+            max-width: 1200px;
+        }
+        /* Custom colors from your palette */
+        .bg-primary { background-color: #1E293B; }
+        .text-primary { color: #1E293B; }
+        .bg-secondary { background-color: #F8FAFC; }
+        .bg-accent { background-color: #FB923C; }
+        .text-accent { color: #FB923C; }
+        .text-support { color: #64748B; }
+        .bg-card { background-color: #FFFFFF; }
+        .dark .bg-card { background-color: #1E293B; }
+        .dark .text-primary { color: #F8FAFC; }
+    </style>
+</head>
+<body class="bg-secondary text-primary dark:bg-primary dark:text-secondary">
+
+    <!-- Sticky Header -->
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md shadow-md py-4 transition-all duration-300">
+        <nav class="container mx-auto px-6 flex items-center justify-between">
+            <a href="#home" class="text-2xl font-bold text-accent">veny.p</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#about" class="hover:text-accent transition-colors duration-200">About</a>
+                <a href="#projects" class="hover:text-accent transition-colors duration-200">Projects</a>
+                <a href="#contact" class="hover:text-accent transition-colors duration-200">Contact</a>
+            </div>
+            <a href="#" class="bg-accent text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition-colors duration-200">
+                Download Resume
+            </a>
+        </nav>
+    </header>
+
+    <main class="py-12">
+        <!-- Home/Hero Section -->
+        <section id="home" class="container mx-auto px-6 py-24 md:py-32 text-center min-h-screen flex items-center justify-center">
+            <div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight">
+                    veny.p
+                </h1>
+                <h2 id="typing-text" class="text-2xl sm:text-3xl lg:text-4xl text-support mt-4 h-12"></h2>
+                <div class="flex flex-col sm:flex-row justify-center gap-4 mt-8">
+                    <a href="#projects" class="bg-accent text-white px-8 py-3 rounded-xl font-semibold shadow-lg hover:bg-orange-600 transition-transform transform hover:-translate-y-1">
+                        View My Work
+                    </a>
+                    <a href="#" class="bg-transparent border-2 border-accent text-accent px-8 py-3 rounded-xl font-semibold hover:bg-accent hover:text-white transition-colors">
+                        Let's Build Something
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="container mx-auto px-6 py-16">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12">The Human Behind the Code</h2>
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2 flex justify-center">
+                    <img src="https://placehold.co/400x400/64748B/FFFFFF?text=veny.p" alt="veny.p" class="w-64 h-64 rounded-full shadow-lg object-cover border-4 border-accent">
+                </div>
+                <div class="lg:w-1/2 space-y-6">
+                    <p class="text-lg">Hey there! I'm veny.p– a passionate full-stack developer who loves turning wild ideas into pixel-perfect reality. Currently crushing my BTech (Class of 2028), but I've been coding since before it was cool to have "developer" in your bio.</p>
+                    <p class="text-lg">My superpower? Building seamless web experiences that make users go "wow, that just works!" From crafting responsive frontends with React and Vue to architecting robust backends with Python and Django, I speak fluent code in multiple dialects.</p>
+                    <p class="text-lg">When I'm not debugging at 2 AM (okay, maybe I am), you'll find me exploring the latest web technologies, creating digital designs in Illustrator, or helping teams bring their visions to life through clear communication and solid project management.</p>
+                    <p class="text-lg font-semibold">I believe great software isn't just about clean code – it's about solving real problems for real people. Ready to build something amazing together?</p>
+                </div>
+            </div>
+
+            <div class="mt-16 text-center">
+                <h3 class="text-2xl font-bold mb-8">My Technical Toolbox</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <!-- Skills Grid with placeholder icons -->
+                    <div class="bg-card p-6 rounded-xl shadow-md transition-transform transform hover:scale-105">
+                        <h4 class="font-bold">React</h4>
+                    </div>
+                    <div class="bg-card p-6 rounded-xl shadow-md transition-transform transform hover:scale-105">
+                        <h4 class="font-bold">Vue.js</h4>
+                    </div>
+                    <div class="bg-card p-6 rounded-xl shadow-md transition-transform transform hover:scale-105">
+                        <h4 class="font-bold">Python</h4>
+                    </div>
+                    <div class="bg-card p-6 rounded-xl shadow-md transition-transform transform hover:scale-105">
+                        <h4 class="font-bold">Django</h4>
+                    </div>
+                    <div class="bg-card p-6 rounded-xl shadow-md transition-transform transform hover:scale-105">
+                        <h4 class="font-bold">Tailwind CSS</h4>
+                    </div>
+                    <div class="bg-card p-6 rounded-xl shadow-md transition-transform transform hover:scale-105">
+                        <h4 class="font-bold">JavaScript (ES6+)</h4>
+                    </div>
+                    <div class="bg-card p-6 rounded-xl shadow-md transition-transform transform hover:scale-105">
+                        <h4 class="font-bold">HTML5</h4>
+                    </div>
+                    <div class="bg-card p-6 rounded-xl shadow-md transition-transform transform hover:scale-105">
+                        <h4 class="font-bold">CSS3</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="container mx-auto px-6 py-16">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12">Things I've Built</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1 (Featured) -->
+                <div class="bg-card rounded-xl shadow-lg p-6 group transition-transform transform hover:-translate-y-2 lg:col-span-2">
+                    <img src="https://placehold.co/800x400/1E293B/F8FAFC?text=Featured+Project" alt="Featured Project" class="rounded-xl mb-4">
+                    <h3 class="text-2xl font-bold mb-2">Featured Build</h3>
+                    <p class="text-support mb-4">This is a showcase of my most recent and impactful project. It demonstrates my skills in a complex, real-world application.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-accent/20 text-accent text-sm font-medium px-2.5 py-0.5 rounded-full">React</span>
+                        <span class="bg-accent/20 text-accent text-sm font-medium px-2.5 py-0.5 rounded-full">Node.js</span>
+                        <span class="bg-accent/20 text-accent text-sm font-medium px-2.5 py-0.5 rounded-full">MongoDB</span>
+                    </div>
+                    <div class="flex gap-4">
+                        <a href="#" class="bg-accent text-white px-4 py-2 rounded-lg font-semibold hover:bg-orange-600 transition-colors">See Live Demo</a>
+                        <a href="#" class="bg-white/10 text-primary border border-primary dark:border-secondary px-4 py-2 rounded-lg font-semibold hover:bg-primary/5 transition-colors">Check GitHub</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="bg-card rounded-xl shadow-lg p-6 group transition-transform transform hover:-translate-y-2">
+                    <img src="https://placehold.co/400x200/1E293B/F8FAFC?text=Project+2" alt="Project 2" class="rounded-xl mb-4">
+                    <h3 class="text-2xl font-bold mb-2">Project 2 Title</h3>
+                    <p class="text-support mb-4">A brief description of project 2. What problem did it solve? What technologies were used?</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-accent/20 text-accent text-sm font-medium px-2.5 py-0.5 rounded-full">Python</span>
+                        <span class="bg-accent/20 text-accent text-sm font-medium px-2.5 py-0.5 rounded-full">Django</span>
+                    </div>
+                    <div class="flex gap-4">
+                        <a href="#" class="bg-accent text-white px-4 py-2 rounded-lg font-semibold hover:bg-orange-600 transition-colors">See Live Demo</a>
+                        <a href="#" class="bg-white/10 text-primary border border-primary dark:border-secondary px-4 py-2 rounded-lg font-semibold hover:bg-primary/5 transition-colors">Check GitHub</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="bg-card rounded-xl shadow-lg p-6 group transition-transform transform hover:-translate-y-2">
+                    <img src="https://placehold.co/400x200/1E293B/F8FAFC?text=Project+3" alt="Project 3" class="rounded-xl mb-4">
+                    <h3 class="text-2xl font-bold mb-2">Project 3 Title</h3>
+                    <p class="text-support mb-4">A brief description of project 3. Your role and the key features of the application.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-accent/20 text-accent text-sm font-medium px-2.5 py-0.5 rounded-full">Vue</span>
+                        <span class="bg-accent/20 text-accent text-sm font-medium px-2.5 py-0.5 rounded-full">Firebase</span>
+                    </div>
+                    <div class="flex gap-4">
+                        <a href="#" class="bg-accent text-white px-4 py-2 rounded-lg font-semibold hover:bg-orange-600 transition-colors">See Live Demo</a>
+                        <a href="#" class="bg-white/10 text-primary border border-primary dark:border-secondary px-4 py-2 rounded-lg font-semibold hover:bg-primary/5 transition-colors">Check GitHub</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 4 -->
+                <div class="bg-card rounded-xl shadow-lg p-6 group transition-transform transform hover:-translate-y-2">
+                    <img src="https://placehold.co/400x200/1E293B/F8FAFC?text=Project+4" alt="Project 4" class="rounded-xl mb-4">
+                    <h3 class="text-2xl font-bold mb-2">Project 4 Title</h3>
+                    <p class="text-support mb-4">A brief description of project 4. The challenges you faced and how you solved them.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-accent/20 text-accent text-sm font-medium px-2.5 py-0.5 rounded-full">JavaScript</span>
+                        <span class="bg-accent/20 text-accent text-sm font-medium px-2.5 py-0.5 rounded-full">CSS3</span>
+                    </div>
+                    <div class="flex gap-4">
+                        <a href="#" class="bg-accent text-white px-4 py-2 rounded-lg font-semibold hover:bg-orange-600 transition-colors">See Live Demo</a>
+                        <a href="#" class="bg-white/10 text-primary border border-primary dark:border-secondary px-4 py-2 rounded-lg font-semibold hover:bg-primary/5 transition-colors">Check GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="container mx-auto px-6 py-16">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12">Let's Create Together</h2>
+            <div class="bg-card rounded-xl shadow-lg p-8 max-w-2xl mx-auto">
+                <p class="text-center text-support mb-8">
+                    Currently available for new opportunities. I'm always open to discussing new projects, creative ideas, or collaboration.
+                </p>
+                <!-- NOTE: Replace 'YOUR_FORMSPREE_ID' with your actual Formspree endpoint -->
+                <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-support">Name</label>
+                        <input type="text" id="name" name="name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-accent focus:ring focus:ring-accent focus:ring-opacity-50 dark:bg-slate-700 dark:border-slate-600 p-2" required>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-support">Email</label>
+                        <input type="email" id="email" name="_replyto" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-accent focus:ring focus:ring-accent focus:ring-opacity-50 dark:bg-slate-700 dark:border-slate-600 p-2" required>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-support">Message</label>
+                        <textarea id="message" name="message" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-accent focus:ring focus:ring-accent focus:ring-opacity-50 dark:bg-slate-700 dark:border-slate-600 p-2" required></textarea>
+                    </div>
+                    <div class="flex justify-end">
+                        <button type="submit" class="bg-accent text-white px-6 py-2 rounded-lg font-semibold shadow-lg hover:bg-orange-600 transition-colors">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+
+                <div class="mt-8 flex justify-center space-x-6">
+                    <!-- GitHub Icon SVG -->
+                    <a href="https://github.com/johntester" target="_blank" class="text-support hover:text-accent transition-colors">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.809 1.305 3.492.998.108-.778.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.465-2.381 1.236-3.221-.124-.303-.535-1.524.118-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.004-.404 1.021.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.771.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.196-6.086 8.196-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <!-- LinkedIn Icon SVG -->
+                    <a href="https://linkedin.com/in/johntester" target="_blank" class="text-support hover:text-accent transition-colors">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11.5 19h-3.5v-10h3.5v10zm1.75-10c0-1.635 1.365-3 3-3s3 1.365 3 3c0 1.635-1.365 3-3 3s-3-1.365-3-3zm11.75 10h-3.5v-5.542c0-3.153-2.484-2.618-2.618-1.503v7.045h-3.5v-10h3.5v1.75c.421-.783 1.58-1.75 3.111-1.75 3.28 0 5.889 2.146 5.889 6.845v3.155z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-primary text-secondary text-center py-6">
+            <p>&copy; <span id="year"></span> veny.p. All rights reserved.</p>
+        </footer>
+    </main>
+
+    <script>
+        // Typing Animation for Hero Text
+        const textElement = document.getElementById('typing-text');
+        const phrases = ["Full-Stack Developer & Digital Problem Solver", "Crafting Web Experiences That Actually Work", "Code + Creativity = Digital Magic ✨"];
+        let phraseIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+
+        function type() {
+            const currentPhrase = phrases[phraseIndex];
+            const displayPhrase = isDeleting
+                ? currentPhrase.substring(0, charIndex--)
+                : currentPhrase.substring(0, charIndex++);
+
+            textElement.textContent = displayPhrase;
+
+            let typingSpeed = 100;
+
+            if (isDeleting) {
+                typingSpeed /= 2;
+            }
+
+            if (!isDeleting && charIndex === currentPhrase.length + 1) {
+                isDeleting = true;
+                typingSpeed = 1500; // Pause at end of phrase
+            } else if (isDeleting && charIndex === -1) {
+                isDeleting = false;
+                phraseIndex = (phraseIndex + 1) % phrases.length;
+                typingSpeed = 500; // Pause before new phrase
+            }
+
+            setTimeout(type, typingSpeed);
+        }
+
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Start animation on window load.
+        window.onload = function () {
+            type();
+        }
+    </script>
+</body>
+</html>
